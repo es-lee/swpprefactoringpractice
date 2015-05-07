@@ -21,8 +21,8 @@ class DateCalculator
   end
 
   def leap_year?
-    (@year % 400 = 0 ||
-      (@year % 4 == 0 && y % 100 != 0))
+    (@year % 400 == 0 ||
+      (@year % 4 == 0 && @year % 100 != 0))
   end
 
 end
